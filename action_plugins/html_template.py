@@ -9,7 +9,7 @@ class ActionModule(ActionBase):
         if task_vars is None:
             task_vars = dict()
         result = super(ActionModule, self).run(tmp, task_vars)
-        src = self._task.args.get('src', None)
+        src = os.path.abspath(self._task.args.get('src', None))
         with open(src) as f:
             template_data = f.read()
         result['text/html'] = self._templar.do_template(template_data,
