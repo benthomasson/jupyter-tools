@@ -1,5 +1,7 @@
 from ansible.plugins.action import ActionBase
 
+import os
+
 
 class ActionModule(ActionBase):
 
