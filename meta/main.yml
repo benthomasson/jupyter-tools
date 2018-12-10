@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Ben Thomasson
+  description: A library of modules for Ansible Jupyter Kernel
+  company: Red Hat
+
+  license: Apache
+
+  min_ansible_version: 1.2
+
+  galaxy_tags:
+      - jupyter
+dependencies: []
